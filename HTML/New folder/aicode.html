@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
+    
+    <script>
+        AFRAME.registerComponent('clickableText', {
+            init: function () {
+                var text = document.querySelector('#text');
+                text.addEventListener("click", function (evt) {
+                    alert("do your stuff");
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam' vr-mode-ui='enabled: false'>
+        <a-entity cursor="rayOrigin: mouse" raycaster="objects: .intersectable; useWorldCoordinates: true;"></a-entity>
+        <a-marker id="marker" preset="hiro" emitevents="true">
+            <a-text id="text" class="intersectable" scale="2 2 2" position="0 0 0" rotation="270 0 0" value="text" color="red"></a-text>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+
+    
+</body>
+</html>

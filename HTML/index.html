@@ -14,7 +14,7 @@
         <a-entity position="0 0.5 0.25"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: [ELEC101] Circuits and Systems.
+                  value: [HIRO] Test Marker
 
 
                   Question: Ampere is a SI base unit, true or false?">
@@ -43,21 +43,25 @@
       
       <!------------------------------------------------------------------->
       
-      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/pattern-marker.patt">
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/COMP101.patt">
         <a-entity position="0 0.5 0.25"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: [ELEC111] Systems Analysis.
+                  value:[COMP101] Introduction to Programming
+                        To introduce concepts and principles of problem solving by computer, and
+                        the construction of appropriate algorithms for the solution of problems.
+                        To demonstrate the principles underlying the design of high level
+                        programming languages. To give students experience and confidence in the
+                        use of a high level programming language to implement algorithms.
 
-
-                  Question: Jade is amazing at programming, true or false?">
+                        Question: Which programming language is named after a comedy series?">
         </a-entity>
-        <a-entity id="arjsanswertext"
+        <a-entity id="comp101answertext"
                   visible="false"
                   position="0.0 0.4 0.45"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: Answer: false. Jade is a complete noob :(">
+                  value:Answer: Python, after Monty Python">
         </a-entity>
 
         <a-box position="0 -0.5 0"
@@ -65,27 +69,30 @@
                width="0.8"
                depth="0.8"
                material="color: yellow; transparent: true; opacity: 0.5"
-               event-set__down="_event: mousedown; _target: #arjsanswertext; visible: true"
-               event-set__leave="_event: mouseleave; _target: #arjsanswertext; visible: false"></a-box>
+               event-set__down= "_event: mousedown;  _target: #comp101answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #comp101answertext; visible: false"></a-box>
       </a-marker>
       
       <!------------------------------------------------------------------->    
       
-      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/pattern-marker-16x16bw-large.patt">
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/ELEC142.patt">
         <a-entity position="0 0.5 0.25"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: [ELEC109] Rabbits - Why they are the best.
+                  value:[ELEC142] Electrical Circuits & Systems
+                        To become familiar with a range of circuit analytical techniques and apply
+                        the most appropriate technique for a given circuit. To understand and 
+                        analyse the behaviour of passive and active components and operational
+                        amplifiers in both DC and AC circuits.
 
-
-                  Question: Question?">
+                  Question: What's the name of the unit used to measure Inductance?">
         </a-entity>
-        <a-entity id="c2answertext"
+        <a-entity id="elec142answertext"
                   visible="false"
                   position="0.0 0.4 0.45"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: Answer: Answer!">
+                  value:Answer: henry, after Joseph Henry.">
         </a-entity>
 
         <a-box position="0 -0.5 0"
@@ -93,28 +100,32 @@
                width="0.8"
                depth="0.8"
                material="color: blue; transparent: true; opacity: 0.5"
-               event-set__down="_event: mousedown; _target: #c2answertext; visible: true"
-               event-set__leave="_event: mouseleave; _target: #c2answertext; visible: false"></a-box>
+               event-set__down= "_event: mousedown;  _target: #elec142answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #elec142answertext; visible: false"></a-box>
       
       </a-marker>
       
       <!------------------------------------------------------------------->     
       
-      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/pattern-marker-16x16bw2-large.patt">
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/ELEC191.patt">
         <a-entity position="0 0.5 0.25"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: [ELEC109] Rabbits - Why they are the best.
+                  value:[ELEC191] Mathematics A for Electrical Engineers
+                        To bring students from varying backgrounds up to a common level in
+                        preparation for further modules in mathematics.  To cover in detail the
+                        basic techniques of differential calculus and provide an introduction to
+                        the theories of integral calculus, vectors, complex numbers and series.
 
-
-                  Question: Question?">
+                        Question: What is a complex number?">
         </a-entity>
-        <a-entity id="c2answertext"
+        <a-entity id="elec191answertext"
                   visible="false"
                   position="0.0 0.4 0.45"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value: Answer: Answer!">
+                  value:Answer: A number that can be expressed in the form a + bi where a/b are
+                        real numbers and i (or j) is the square root of -1 (!)">
         </a-entity>
 
         <a-box position="0 -0.5 0"
@@ -122,8 +133,41 @@
                width="0.8"
                depth="0.8"
                material="color: blue; transparent: true; opacity: 0.5"
-               event-set__down="_event: mousedown; _target: #c2answertext; visible: true"
-               event-set__leave="_event: mouseleave; _target: #c2answertext; visible: false"></a-box>
+               event-set__down= "_event: mousedown;  _target: #elec191answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #elec191answertext; visible: false"></a-box>
+      
+      </a-marker>
+      
+      <!------------------------------------------------------------------->      
+      
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/ELEC142.patt">
+        <a-entity position="0 0.5 0.25"
+                  rotation="-45 0 0"
+                  text="anchor: center; width: 1.5; color: white;
+                  value:[ELEC142] Mathematics A for Electrical Engineers
+                        To bring students from varying backgrounds up to a common level in
+                        preparation for further modules in mathematics.  To cover in detail the
+                        basic techniques of differential calculus and provide an introduction to
+                        the theories of integral calculus, vectors, complex numbers and series.
+
+                        Question: What is Ohm's Law?">
+        </a-entity>
+        <a-entity id="elec142answertext"
+                  visible="false"
+                  position="0.0 0.4 0.45"
+                  rotation="-45 0 0"
+                  text="anchor: center; width: 1.5; color: white;
+                  value:Answer: The voltage (in Volts) across a ohmic/linear component with a 
+                        resistance in ohms, such as a resistor, given a current in Amps i.e. V=IR">
+        </a-entity>
+
+        <a-box position="0 -0.5 0"
+               height="0.8"
+               width="0.8"
+               depth="0.8"
+               material="color: blue; transparent: true; opacity: 0.5"
+               event-set__down= "_event: mousedown;  _target: #elec142answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #elec142answertext; visible: false"></a-box>
       
       </a-marker>
       
