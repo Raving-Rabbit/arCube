@@ -140,25 +140,22 @@
       
       <!------------------------------------------------------------------->      
       
-      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/ELEC142.patt">
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/ELEC222.patt">
         <a-entity position="0 0.5 0.25"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value:[ELEC142] Mathematics A for Electrical Engineers
-                        To bring students from varying backgrounds up to a common level in
-                        preparation for further modules in mathematics.  To cover in detail the
-                        basic techniques of differential calculus and provide an introduction to
-                        the theories of integral calculus, vectors, complex numbers and series.
+                  value:[ELEC222] The aim of the project is to provide students with practical
+                        work which underpins, confirms and gives application focus for academic
+                        study, while testing a wide range of skills.
 
-                        Question: What is Ohm's Law?">
+                        Question: What is the SI base unit for temperature?">
         </a-entity>
-        <a-entity id="elec142answertext"
+        <a-entity id="elec222answertext"
                   visible="false"
                   position="0.0 0.4 0.45"
                   rotation="-45 0 0"
                   text="anchor: center; width: 1.5; color: white;
-                  value:Answer: The voltage (in Volts) across a ohmic/linear component with a 
-                        resistance in ohms, such as a resistor, given a current in Amps i.e. V=IR">
+                  value:Answer: kelvin, named after William Thomson, 1st Baron Kelvin">
         </a-entity>
 
         <a-box position="0 -0.5 0"
@@ -166,8 +163,8 @@
                width="0.8"
                depth="0.8"
                material="color: blue; transparent: true; opacity: 0.5"
-               event-set__down= "_event: mousedown;  _target: #elec142answertext; visible: true"
-               event-set__leave="_event: mouseleave; _target: #elec142answertext; visible: false"></a-box>
+               event-set__down= "_event: mousedown;  _target: #elec222answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #elec222answertext; visible: false"></a-box>
       
       </a-marker>
       
