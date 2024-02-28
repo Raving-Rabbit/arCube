@@ -98,6 +98,35 @@
       
       </a-marker>
       
+      <!------------------------------------------------------------------->     
+      
+      <a-marker type="pattern" url="https://raw.githack.com/Raving-Rabbit/arCube/main/HTML/pattern-marker-16x16bw2-large.patt">
+        <a-entity position="0 0.5 0.25"
+                  rotation="-45 0 0"
+                  text="anchor: center; width: 1.5; color: white;
+                  value: [ELEC109] Rabbits - Why they are the best.
+
+
+                  Question: Question?">
+        </a-entity>
+        <a-entity id="c2answertext"
+                  visible="false"
+                  position="0.0 0.4 0.45"
+                  rotation="-45 0 0"
+                  text="anchor: center; width: 1.5; color: white;
+                  value: Answer: Answer!">
+        </a-entity>
+
+        <a-box position="0 -0.5 0"
+               height="0.8"
+               width="0.8"
+               depth="0.8"
+               material="color: blue; transparent: true; opacity: 0.5"
+               event-set__down="_event: mousedown; _target: #c2answertext; visible: true"
+               event-set__leave="_event: mouseleave; _target: #c2answertext; visible: false"></a-box>
+      
+      </a-marker>
+      
       <!-------------------------------------------------------------------> 
       
       <a-entity camera>
